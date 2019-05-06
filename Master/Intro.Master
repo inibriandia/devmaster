@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Intro.master.cs" Inherits="Master.Intro" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Page principal</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 241px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <table style="width: 100%;">
+                    <tr>
+                        <td colspan="2" style="background-color: #99CCFF">
+                            <asp:Image ID="logoImage" runat="server" ImageUrl="~/GymLogo.png" Height="66px" Width="67px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style1" style="background-color: #CCFF99">
+                            <asp:Menu ID="Menu1" runat="server">
+                                <Items>
+                                    <asp:MenuItem Text="Produits" Value="Produits"></asp:MenuItem>
+                                    <asp:MenuItem Text="Information" Value="Information"></asp:MenuItem>
+                                    <asp:MenuItem Text="Employés" Value="Employés"></asp:MenuItem>
+                                </Items>
+                            </asp:Menu>
+                        </td>
+                        <td style="background-color: #FFCCCC">
+                            <asp:ContentPlaceHolder ID="centreContent" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                </table>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
