@@ -10,33 +10,24 @@
 namespace Master {
     
     
-    public partial class Produits {
+    public partial class Employes {
         
         /// <summary>
-        /// ProduitsGridView control.
+        /// employesGridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView ProduitsGridView;
+        protected global::System.Web.UI.WebControls.GridView employesGridView;
         
         /// <summary>
-        /// CategorieSqlDataSource control.
+        /// obtenirEmployesButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource CategorieSqlDataSource;
-        
-        /// <summary>
-        /// ProduitsSqlDataSource control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource ProduitsSqlDataSource;
+        protected global::System.Web.UI.WebControls.Button obtenirEmployesButton;
     }
 }

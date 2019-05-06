@@ -53,6 +53,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Employes.aspx" />
+    <Content Include="Information.aspx" />
     <Content Include="Intro.Master" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -71,6 +74,27 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employes.aspx.cs">
+      <DependentUpon>Employes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employes.aspx.designer.cs">
+      <DependentUpon>Employes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Information.aspx.cs">
+      <DependentUpon>Information.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Information.aspx.designer.cs">
+      <DependentUpon>Information.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Intro.Master.cs">
       <DependentUpon>Intro.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -98,10 +122,16 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_LocalResources\Information.aspx.resx" />
+    <Content Include="App_LocalResources\Information.aspx.fr.resx" />
+    <Content Include="App_LocalResources\Information.aspx.en.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

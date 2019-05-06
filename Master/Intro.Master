@@ -9,7 +9,10 @@
     </asp:ContentPlaceHolder>
     <style type="text/css">
         .auto-style1 {
-            width: 241px;
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 100px;
         }
     </style>
 </head>
@@ -24,12 +27,12 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style1" style="background-color: #CCFF99">
+                        <td class="auto-style2" align="left" valign="top" style="background-color: #CCFF99">
                             <asp:Menu ID="Menu1" runat="server">
                                 <Items>
-                                    <asp:MenuItem Text="Produits" Value="Produits"></asp:MenuItem>
-                                    <asp:MenuItem Text="Information" Value="Information"></asp:MenuItem>
-                                    <asp:MenuItem Text="Employés" Value="Employés"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/Produits.aspx" Text="Produits" Value="Produits"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/Information.aspx" Text="Information" Value="Information"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/Employes.aspx" Text="Employés" Value="Employés"></asp:MenuItem>
                                 </Items>
                             </asp:Menu>
                         </td>
